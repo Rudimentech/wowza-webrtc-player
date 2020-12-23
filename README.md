@@ -7,15 +7,24 @@ Easy to use **WebRTC** Player library to connect to **Wowza Media Server**.
 
 ---
 
+# Why use this fork?
+
+I've added workaround for these errors.
+<pre>
+Property 'on' does not exist on type 'PeerConnection'.
+Property 'emit' does not exist on type 'PeerConnection'.
+</pre>
+That's it!
+
 ## 🚀 Installation
 
 Install with [yarn](https://yarnpkg.com):
 
-    $ yarn add wowza-webrtc-player
+    $ yarn add @nutbutterfly/wowza-webrtc-player
 
 Or install using [npm](https://npmjs.org):
 
-    $ npm i wowza-webrtc-player
+    $ npm i @nutbutterfly/wowza-webrtc-player
 
 ---
 
