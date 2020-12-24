@@ -1,8 +1,11 @@
 {
   "name": "@nutbutterfly/wowza-webrtc-player",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "A generic player to handle Wowza WebRTC api",
-  "author": "Vincent Thibault <vthibault.mobile@gmail.com>",
+  "author": {
+    "name": "Vincent Thibault",
+    "email": "vthibault.mobile@gmail.com"
+  },
   "license": "MIT",
   "main": "./dist/cjs/wowza-webrtc-player.js",
   "module": "./dist/esm/wowza-webrtc-player.js",
@@ -18,15 +21,16 @@
   "bugs": {
     "url": "https://github.com/nutbutterfly/wowza-webrtc-player/issues"
   },
+  "bundleDependencies": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nutbutterfly/wowza-webrtc-player.git"
   },
   "scripts": {
-    "lint": "tsc --noEmit && eslint . --ext .ts",
     "build": "del dist && npm run update-license && rollup -c && npm run update-filesize",
-    "update-license": "node utils/update-license.js",
-    "update-filesize": "node utils/update-size.js"
+    "lint": "tsc --noEmit && eslint . --ext .ts",
+    "update-filesize": "node utils/update-size.js",
+    "update-license": "node utils/update-license.js"
   },
   "keywords": [
     "wowza",
@@ -56,8 +60,5 @@
     "rollup-plugin-terser": "^5.1.3",
     "typescript": "^3.7.3"
   },
-  "homepage": "https://github.com/nutbutterfly/wowza-webrtc-player#readme",
-  "directories": {
-    "example": "examples"
-  }
+  "homepage": "https://github.com/nutbutterfly/wowza-webrtc-player#readme"
 }

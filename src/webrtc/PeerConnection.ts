@@ -16,7 +16,6 @@ const RTCSessionDescriptionAPI =
   window.webkitRTCSessionDescription*/;
 
 export class PeerConnection extends EventEmitter {
-
   private pc: RTCPeerConnection;
 
   constructor(iceServers?: RTCIceServer[]) {
